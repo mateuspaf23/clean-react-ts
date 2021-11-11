@@ -18,7 +18,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
+    "test:watch": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
